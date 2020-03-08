@@ -8,7 +8,7 @@
 2. Nginx with HTTPS enabled
 3. Mediawiki
 4. Apache Directory LDAP
-5. Postgres with plv8
+5. Postgres
 6. MySQL
 7. Apache Solr with Zookeeper
 8. Elastic Search
