@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  web:
+    build: ./webapp/.
+    networks:
+      - docker_network
+    volumes:
+      - ./webapp/:/code/
+
+  nginx:
+    image: nginx
+    restart: always
+    networks: 
+      - docker_network
+    volumes:
+      - ./NGINX/configs/conf.d:/etc/nginx/conf.d
+      - ./NGINX/configs/default.d:/etc/nginx/default.d
+      - ./NGINX/certs/.:/etc/ssl/.
+    ports:
+      - "8080:80"
+      - "9443:443"
+    links:
+      - web
+
+networks:
+  docker_network:
+    driver: bridge
