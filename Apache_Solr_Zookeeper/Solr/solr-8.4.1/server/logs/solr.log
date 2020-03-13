@@ -1,0 +1,96 @@
+2020-03-13 23:39:19.765 INFO  (main) [   ] o.e.j.u.log Logging initialized @1322ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-03-13 23:39:20.063 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2020-03-13 23:39:20.064 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///opt/solr/server/etc/jetty-http.xml
+2020-03-13 23:39:20.086 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 1.8.0_242-8u242-b08-0ubuntu3~18.04-b08
+2020-03-13 23:39:20.117 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///opt/solr/server/contexts/] at interval 0
+2020-03-13 23:39:20.763 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-03-13 23:39:20.777 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-03-13 23:39:20.777 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-03-13 23:39:20.781 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2020-03-13 23:39:20.889 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-03-13 23:39:20.894 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr? version 8.4.1
+2020-03-13 23:39:20.895 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 8983
+2020-03-13 23:39:20.895 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /opt/solr
+2020-03-13 23:39:20.895 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-03-13T23:39:20.895Z
+2020-03-13 23:39:20.939 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /opt/solr/server/solr
+2020-03-13 23:39:20.951 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /opt/solr/server/solr/solr.xml
+2020-03-13 23:39:21.039 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@258e2e41, but no JMX reporters were configured - adding default JMX reporter.
+2020-03-13 23:39:21.641 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-03-13 23:39:21.831 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@4b3a45f1[provider=null,keyStore=null,trustStore=null]
+2020-03-13 23:39:21.831 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@4b3a45f1[provider=null,keyStore=null,trustStore=null]
+2020-03-13 23:39:22.084 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@42f3156d[provider=null,keyStore=null,trustStore=null]
+2020-03-13 23:39:22.084 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@42f3156d[provider=null,keyStore=null,trustStore=null]
+2020-03-13 23:39:22.118 INFO  (main) [   ] o.a.s.c.SolrZkServerProps Reading configuration from: /opt/solr/server/solr/zoo.cfg
+2020-03-13 23:39:22.134 INFO  (main) [   ] o.a.s.c.SolrZkServer STARTING EMBEDDED STANDALONE ZOOKEEPER SERVER at port 9983
+2020-03-13 23:39:22.635 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:9983
+2020-03-13 23:39:22.724 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2020-03-13 23:39:22.814 INFO  (zkConnectionManagerCallback-7-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2020-03-13 23:39:22.814 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2020-03-13 23:39:22.953 INFO  (main) [   ] o.a.s.c.OverseerElectionContext I am going to be the leader 172.18.0.3:8983_solr
+2020-03-13 23:39:22.960 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=72057697719484416-172.18.0.3:8983_solr-n_0000000001) starting
+2020-03-13 23:39:23.100 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/172.18.0.3:8983_solr
+2020-03-13 23:39:23.103 INFO  (OverseerStateUpdate-72057697719484416-172.18.0.3:8983_solr-n_0000000001) [   ] o.a.s.c.Overseer Starting to work on the main queue : 172.18.0.3:8983_solr
+2020-03-13 23:39:23.149 INFO  (zkCallback-6-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2020-03-13 23:39:23.215 INFO  (main) [   ] o.a.s.p.PackageLoader /packages.json updated to version -1
+2020-03-13 23:39:23.270 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2020-03-13 23:39:23.498 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-03-13 23:39:23.609 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@258e2e41
+2020-03-13 23:39:23.610 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@258e2e41
+2020-03-13 23:39:23.623 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@258e2e41
+2020-03-13 23:39:23.860 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /opt/solr/server/solr
+2020-03-13 23:39:23.964 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@15bbf42f{/solr,file:///opt/solr/server/solr-webapp/webapp/,AVAILABLE}{/opt/solr/server/solr-webapp/webapp}
+2020-03-13 23:39:23.970 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@fbd1f6{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-03-13 23:39:23.970 INFO  (main) [   ] o.e.j.s.Server Started @5529ms
+2020-03-13 23:40:23.671 INFO  (qtp178049969-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/metrics params={wt=javabin&version=2&key=solr.jvm:os.processCpuLoad&key=solr.node:CONTAINER.fs.coreRoot.usableSpace&key=solr.jvm:os.systemLoadAverage&key=solr.jvm:memory.heap.used} status=0 QTime=43
+2020-03-13 23:41:23.437 INFO  (qtp178049969-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/metrics params={prefix=CONTAINER.fs.usableSpace,CONTAINER.fs.totalSpace,CORE.coreName&wt=javabin&version=2&group=solr.node,solr.core} status=0 QTime=7
+2020-03-13 23:41:23.451 INFO  (AutoscalingActionExecutor-8-thread-1) [   ] o.a.s.c.a.ExecutePlanAction No operations to execute for event: {
+  "id":"170987890a2T4v5k92i5vh09w5lcc4kxy0vhx",
+  "source":".auto_add_replicas",
+  "eventTime":1583106003106,
+  "eventType":"NODELOST",
+  "properties":{
+    "eventTimes":[1583106003106],
+    "preferredOperation":"movereplica",
+    "_enqueue_time_":1703160165035,
+    "nodeNames":["172.18.0.2:8983_solr"]}}
+2020-03-13 23:41:23.750 INFO  (qtp178049969-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/metrics params={wt=javabin&version=2&key=solr.jvm:os.processCpuLoad&key=solr.node:CONTAINER.fs.coreRoot.usableSpace&key=solr.jvm:os.systemLoadAverage&key=solr.jvm:memory.heap.used} status=0 QTime=1
+2020-03-13 23:42:23.767 INFO  (qtp178049969-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/metrics params={wt=javabin&version=2&key=solr.jvm:os.processCpuLoad&key=solr.node:CONTAINER.fs.coreRoot.usableSpace&key=solr.jvm:os.systemLoadAverage&key=solr.jvm:memory.heap.used} status=0 QTime=12
+2020-03-13 23:43:23.773 INFO  (qtp178049969-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/metrics params={wt=javabin&version=2&key=solr.jvm:os.processCpuLoad&key=solr.node:CONTAINER.fs.coreRoot.usableSpace&key=solr.jvm:os.systemLoadAverage&key=solr.jvm:memory.heap.used} status=0 QTime=1
+2020-03-13 23:44:23.784 INFO  (qtp178049969-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/metrics params={wt=javabin&version=2&key=solr.jvm:os.processCpuLoad&key=solr.node:CONTAINER.fs.coreRoot.usableSpace&key=solr.jvm:os.systemLoadAverage&key=solr.jvm:memory.heap.used} status=0 QTime=3
+2020-03-13 23:44:38.190 INFO  (qtp178049969-13) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-03-13 23:44:38.195 INFO  (qtp178049969-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1584143078007} status=0 QTime=17
+2020-03-13 23:44:38.224 INFO  (qtp178049969-66) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584143078007} status=0 QTime=46
+2020-03-13 23:44:38.233 INFO  (qtp178049969-70) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584143078007} status=0 QTime=55
+2020-03-13 23:44:38.276 INFO  (qtp178049969-17) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1584143078007 and sendToOCPQueue=true
+2020-03-13 23:44:38.276 INFO  (qtp178049969-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1584143078007} status=0 QTime=0
+2020-03-13 23:44:38.296 INFO  (qtp178049969-68) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :listaliases with params action=LISTALIASES&wt=json&_=1584143078007 and sendToOCPQueue=true
+2020-03-13 23:44:38.298 INFO  (qtp178049969-68) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1584143078007} status=0 QTime=1
+2020-03-13 23:44:40.367 INFO  (qtp178049969-68) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :clusterstatus with params action=CLUSTERSTATUS&wt=json&_=1584143078007 and sendToOCPQueue=true
+2020-03-13 23:44:40.367 INFO  (qtp178049969-60) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1584143078007} status=0 QTime=0
+2020-03-13 23:44:40.370 INFO  (qtp178049969-68) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1584143078007} status=0 QTime=3
+2020-03-13 23:44:40.383 INFO  (qtp178049969-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584143078007} status=0 QTime=15
+2020-03-13 23:44:40.429 INFO  (qtp178049969-64) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1584143078007 and sendToOCPQueue=true
+2020-03-13 23:44:40.430 INFO  (qtp178049969-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1584143078007} status=0 QTime=0
+2020-03-13 23:44:40.443 INFO  (qtp178049969-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=javabin&version=2&_=1584143078007} status=0 QTime=17
+2020-03-13 23:44:40.449 INFO  (qtp178049969-73) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/metrics params={prefix=CONTAINER.fs,org.eclipse.jetty.server.handler.DefaultHandler.get-requests,INDEX.sizeInBytes,SEARCHER.searcher.numDocs,SEARCHER.searcher.deletedDocs,SEARCHER.searcher.warmupTime&wt=javabin&version=2&_=1584143080343} status=0 QTime=19
+2020-03-13 23:44:40.456 INFO  (qtp178049969-74) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :listaliases with params action=LISTALIASES&wt=json&_=1584143078007 and sendToOCPQueue=true
+2020-03-13 23:44:40.458 INFO  (qtp178049969-60) [   ] o.a.s.h.a.AdminHandlersProxy Fetched response from 1 nodes: [172.18.0.3:8983_solr]
+2020-03-13 23:44:40.458 INFO  (qtp178049969-60) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/metrics params={nodes=172.18.0.3:8983_solr&prefix=CONTAINER.fs,org.eclipse.jetty.server.handler.DefaultHandler.get-requests,INDEX.sizeInBytes,SEARCHER.searcher.numDocs,SEARCHER.searcher.deletedDocs,SEARCHER.searcher.warmupTime&wt=json&_=1584143080343} status=0 QTime=46
+2020-03-13 23:44:40.458 INFO  (qtp178049969-74) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1584143078007} status=0 QTime=2
+2020-03-13 23:44:40.460 INFO  (qtp178049969-17) [   ] o.a.s.h.a.AdminHandlersProxy Fetched response from 1 nodes: [172.18.0.3:8983_solr]
+2020-03-13 23:44:40.460 INFO  (qtp178049969-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={nodes=172.18.0.3:8983_solr&wt=json&_=1584143078007} status=0 QTime=45
+2020-03-13 23:44:43.558 INFO  (qtp178049969-65) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1584143078007} status=0 QTime=0
+2020-03-13 23:44:43.565 INFO  (qtp178049969-64) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :clusterstatus with params action=CLUSTERSTATUS&wt=json&_=1584143078007 and sendToOCPQueue=true
+2020-03-13 23:44:43.569 INFO  (qtp178049969-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1584143078007} status=0 QTime=5
+2020-03-13 23:44:43.613 INFO  (qtp178049969-75) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1584143078007} status=0 QTime=55
+2020-03-13 23:44:43.639 INFO  (qtp178049969-64) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :listaliases with params action=LISTALIASES&wt=json&_=1584143078007 and sendToOCPQueue=true
+2020-03-13 23:44:43.640 INFO  (qtp178049969-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1584143078007} status=0 QTime=1
+2020-03-13 23:44:43.643 INFO  (qtp178049969-69) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={path=/configs/&detail=false&wt=json&_=1584143080343} status=0 QTime=81
+2020-03-13 23:44:43.652 INFO  (qtp178049969-68) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1584143078007 and sendToOCPQueue=true
+2020-03-13 23:44:43.652 INFO  (qtp178049969-68) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1584143078007} status=0 QTime=0
+2020-03-13 23:44:43.699 INFO  (qtp178049969-64) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :listaliases with params action=LISTALIASES&wt=json&_=1584143078007 and sendToOCPQueue=true
+2020-03-13 23:44:43.700 INFO  (qtp178049969-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1584143078007} status=0 QTime=1
+2020-03-13 23:45:23.789 INFO  (qtp178049969-68) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/metrics params={wt=javabin&version=2&key=solr.jvm:os.processCpuLoad&key=solr.node:CONTAINER.fs.coreRoot.usableSpace&key=solr.jvm:os.systemLoadAverage&key=solr.jvm:memory.heap.used} status=0 QTime=1
+2020-03-13 23:46:23.797 INFO  (qtp178049969-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/metrics params={wt=javabin&version=2&key=solr.jvm:os.processCpuLoad&key=solr.node:CONTAINER.fs.coreRoot.usableSpace&key=solr.jvm:os.systemLoadAverage&key=solr.jvm:memory.heap.used} status=0 QTime=3
+2020-03-13 23:47:23.803 INFO  (qtp178049969-68) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/metrics params={wt=javabin&version=2&key=solr.jvm:os.processCpuLoad&key=solr.node:CONTAINER.fs.coreRoot.usableSpace&key=solr.jvm:os.systemLoadAverage&key=solr.jvm:memory.heap.used} status=0 QTime=1
+2020-03-13 23:48:23.810 INFO  (qtp178049969-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/metrics params={wt=javabin&version=2&key=solr.jvm:os.processCpuLoad&key=solr.node:CONTAINER.fs.coreRoot.usableSpace&key=solr.jvm:os.systemLoadAverage&key=solr.jvm:memory.heap.used} status=0 QTime=3

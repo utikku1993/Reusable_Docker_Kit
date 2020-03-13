@@ -1,0 +1,31 @@
+# Apache Solr + Zookeeper
+#
+# Access via "http://localhost:8983"
+#   (or "http://$(docker-machine ip):8983" if using docker-machine)
+
+version: '3'
+services:
+  zookeeper:
+    build: ./Zookeeper/
+    networks:
+      - docker_network
+
+  solr:
+    build: ./Solr/
+    restart: always
+    networks:
+      - docker_network
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./Solr/solr-8.4.1:/opt/solr
+    ports:
+      - "8983:8983"
+      - "7574:7574"
+    command: /bin/bash -c 'cd /opt/solr/bin && ./solr start -c  -f -force'
+    links:
+      - zookeeper
+
+networks:
+  docker_network:
+    driver: bridge
