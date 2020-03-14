@@ -4,11 +4,11 @@ MAINTAINER Uttakarsh Tikku
 ARG MIRROR=https://downloads.apache.org
 ARG VERSION=3.6.0
 
-LABEL name="zookeeper" version=3.5.5
+LABEL name="zookeeper" version=3.6.0
 
 RUN apk add --no-cache wget bash \
     && mkdir -p /opt/zookeeper \
-    && wget -q -O - $MIRROR/zookeeper/zookeeper-$VERSION/apache-zookeeper-3.6.0-bin.tar.gz \
+    && wget -q -O - $MIRROR/zookeeper/zookeeper-$VERSION/apache-zookeeper-$VERSION-bin.tar.gz \
       | tar -xzC /opt/zookeeper --strip-components=1 \
     && cp /opt/zookeeper/conf/zoo_sample.cfg  /opt/zookeeper/conf/zoo.cfg \
     && mkdir -p /tmp/zookeeper
