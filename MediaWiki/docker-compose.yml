@@ -11,8 +11,6 @@ services:
       - docker_network
     ports:
       - 8080:80
-    links:
-      - database
     volumes:
       - /var/www/html/images
       # After initial setup, download LocalSettings.php to the same directory as

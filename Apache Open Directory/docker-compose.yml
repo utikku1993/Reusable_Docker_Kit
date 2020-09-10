@@ -1,0 +1,19 @@
+# Apache Directory LDAP
+#
+# Access via "http://localhost:10389"
+#   (or "http://$(docker-machine ip):10389" if using docker-machine)
+
+version: '3'
+services:
+  open_ldap:
+    image: dwimberger/ldap-ad-it
+    restart: always
+    networks:
+      - docker_network
+    ports:
+      - "10389:10389"
+
+
+networks:
+  docker_network:
+    driver: bridge
